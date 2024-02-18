@@ -3,6 +3,9 @@ import numpy as np
 from colors import bcolors
 from matrix_utility_fixed import print_matrix
 
+print(
+    "date:19.02.24 \n the git link:https://github.com/yagelbatito/cond-for-test.git\ngroup:Almog Babila 209477678, Hay Carmi 207265687, Yagel Batito 318271863, Meril Hasid 324569714\nstudent:Yagel Batito 318271863")
+
 
 def norm(mat):
     size = len(mat)
@@ -40,7 +43,7 @@ def condition_number(A):
 
     print(bcolors.OKBLUE, "max norm of the inverse of A:", bcolors.ENDC, norm_A_inv)
 
-    #print_matrix(np.dot(A_inv,A))
+    # print_matrix(np.dot(A_inv,A))
 
     return cond
 
@@ -52,5 +55,3 @@ if __name__ == '__main__':
     print(bcolors.OKGREEN, "\n condition number: ", cond, bcolors.ENDC)
 
     print("condition number according numpi: ",np.linalg.cond(A,np.inf))
-
-    print("https://github.com/yagelbatito/cond-for-test.git\ngroup:Almog Babila, Hay Carmi, Yagel Batito, Meril Hasid\nstudent:Yagel Batito 318271863")
